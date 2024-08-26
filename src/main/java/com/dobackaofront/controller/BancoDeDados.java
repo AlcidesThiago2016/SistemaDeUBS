@@ -45,6 +45,12 @@ public class BancoDeDados {
                 linha = br.readLine();
             }
 
+            br.close();
+            isr.close();
+            is.close();
+
+            System.out.println("Arquivo lido com sucesso!");
+
         }catch (Exception e){
             System.out.println("Não foi possivel ler o arquivo. " +e.getMessage());
         }
